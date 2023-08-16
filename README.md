@@ -1,6 +1,8 @@
 
 # Shopmate - React Shopping Cart App
 [shopmate](https://shopmate-react-ui.netlify.app/)
+
+
 Shopmate is a basic shopping cart application built using React. It provides a simple user interface with two main pages: "Home" and "Cart," allowing users to browse and add items to their cart.
 
 
