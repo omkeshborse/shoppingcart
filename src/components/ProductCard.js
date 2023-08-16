@@ -1,7 +1,15 @@
-import React from 'react'
-
-export const ProductCard = () => {
+import React from "react";
+import "./ProductCard.css";
+export const ProductCard = ({ product }) => {
+  const { name, price, image } = product;
   return (
-    <div>ProductCard</div>
-  )
-}
+    <div className="productCard">
+      <img src={image} alt={name} />
+      <p className="name">name</p>
+      <div className="action">
+        <p> ${price}</p>
+        <button type="button">Add To cart</button>
+      </div>
+    </div>
+  );
+};
