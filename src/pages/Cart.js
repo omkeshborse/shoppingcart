@@ -4,7 +4,7 @@ import { useTitle } from "../hooks/useTitle";
 import { useCart } from "../context/CartContext";
 export const Cart = () => {
   const {total ,cartList } = useCart() ;
-  console.log(cartList);
+ 
   useTitle("Cart");
   // const products = [
   //   {
