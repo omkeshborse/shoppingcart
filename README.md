@@ -1,6 +1,8 @@
 
 # Shopmate - React Shopping Cart App
 [shopmate](https://shopmate-react-ui.netlify.app/)
+
+#shopmate with functionality
 #I'm actively developing a new feature in the "secondbranch" (secondbarch-Deploy-project-link ) 
 [shopmate_with_functionality](https://reliable-parfait-09132f.netlify.app/)
 
