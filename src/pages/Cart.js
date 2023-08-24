@@ -1,7 +1,9 @@
 import React from "react";
 import { CartCard } from "../components";
 import { useTitle } from "../hooks/useTitle";
+import { useCart } from "../context/CartContext";
 export const Cart = () => {
+  const {total } = useCart() ;
   useTitle("Cart");
   const products = [
     {
@@ -12,7 +14,7 @@ export const Cart = () => {
     },
     {
       id: 2,
-      name: "boAt Rockerz 450",
+      name: "boAt Rockers 450",
       price: 49,
       image: "/assets/image/1002.png",
     },
@@ -20,7 +22,9 @@ export const Cart = () => {
   return (
     <main>
       <section className="cart">
-        <h1>Cart Items :{products.length} </h1>
+        <h1>
+          Cart Items :{products.length} / ${total}
+        </h1>
         {products.map((product) => (
           <CartCard key={product.id} product={product} />
         ))}
